@@ -1,0 +1,6 @@
+.env
+.gitgnore
+node_modules
+.nuxt
+dist
+coverage

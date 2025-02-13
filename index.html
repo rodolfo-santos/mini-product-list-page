@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link vite-else rel="icon" <% __append(`href="/src/systems/${system}/assets/favicon.ico" `) %> />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Garanta ou Renove sua bolsa de estudos!" />
+    <meta name="author" content="Quero Bolsa" />
+    <meta name="keywords" content="educação, escola, melhor escola, quero bolsa, quero escola, bolsas, ensino médio, ensino fundamental" />
+    <meta name="robots" content="noindex" />
+  </head>
+
+  <body <% __append(`data-theme="${system}" `) %> >
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script src="https://assets.pagar.me/pagarme-js/4.11/pagarme.min.js"></script>
+    <script <% __append(`src="https://www.google.com/recaptcha/api.js?render=${siteKeyRecaptcha}" `) %>></script>
+  </body>
+</html>

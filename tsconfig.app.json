@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "composite": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve",
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noLib": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {
+      "%/*": ["src/systems/melhor-escola/*", "src/systems/quero-bolsa/*"],
+      "~/*": ["src/*"]
+    },
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "target": "esnext",
+    "types": ["vite/client"]
+  },
+  "exclude": ["**/*.js", "dist", "node_modules", "tests/server/**/*.ts", "vitest/setup.ts"],
+  "include": [
+    "src/**/*",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tailwind.config.ts",
+    "tests/**/*.ts",
+    "types/*.d.ts",
+    "vite.config.ts"
+  ]
+}

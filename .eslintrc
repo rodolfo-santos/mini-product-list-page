@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "@quero/eslint-config-vue",
+    "@vue/eslint-config-typescript",
+    "@vue/eslint-config-prettier",
+    "plugin:vuejs-accessibility/recommended",
+    "plugin:vue/vue3-essential"
+  ],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": ["./tsconfig.config.json", "./tsconfig.app.json", "./tsconfig.vitest.json"]
+  },
+  "plugins": ["@quero/vue", "vue", "vuejs-accessibility", "prettier"],
+  "ignorePatterns": "*.d.ts",
+  "rules": {
+    "prettier/prettier": "error",
+    "vue/singleline-html-element-content-newline": "off",
+    "no-unused-vars": "off",
+    "space-before-function-paren": "off",
+    "vue/no-v-model-argument": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/no-multiple-template-root": "off",
+    "@typescript-eslint/unbound-method": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "no-underscore-dangle": "off",
+    "id-blacklist": "off",
+    "@typescript-eslint/no-unsafe-enum-comparison": "off",
+    "@typescript-eslint/no-misused-promises": "off"
+  }
+}
